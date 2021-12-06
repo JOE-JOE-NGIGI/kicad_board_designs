@@ -31,12 +31,12 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
+    (48 B.Fab user hide)
+    (49 F.Fab user hide)
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
@@ -402,6 +402,11 @@
     (pad 17 smd rect (at 5.75 3.75) (size 1.2 0.3) (layers F.Cu F.Paste F.Mask)
       (net 32 "Net-(U2-Pad17)"))
     (model "D:/personal projects/PCB/Libraries/stm32/lib2/STM32F405RGT6.step"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
+    (model D:/personal_projects/PCB/Libraries/stm32/lib2/STM32F405RGT6.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))

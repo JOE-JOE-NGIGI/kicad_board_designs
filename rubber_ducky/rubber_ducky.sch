@@ -1,0 +1,224 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85V-10SU U1
+U 1 1 61967782
+P 5050 3550
+F 0 "U1" H 4520 3596 50  0000 R CNN
+F 1 "ATtiny85V-10SU" H 4520 3505 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 5050 3550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 5050 3550 50  0001 C CNN
+	1    5050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D3
+U 1 1 6196A25F
+P 7000 4100
+F 0 "D3" V 6954 4180 50  0000 L CNN
+F 1 "1N5819" V 7045 4180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7000 3925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7000 4100 50  0001 C CNN
+	1    7000 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 4250 7000 4950
+Wire Wire Line
+	7000 4950 4080 4950
+Wire Wire Line
+	7000 3950 7000 2850
+Wire Wire Line
+	5050 2850 5050 2950
+Wire Wire Line
+	5050 2850 6300 2850
+$Comp
+L Device:R R3
+U 1 1 6196CE37
+P 6300 3200
+F 0 "R3" H 6370 3246 50  0000 L CNN
+F 1 "1k" H 6370 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6230 3200 50  0001 C CNN
+F 3 "~" H 6300 3200 50  0001 C CNN
+	1    6300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2850 6300 3050
+Connection ~ 6300 2850
+Wire Wire Line
+	6300 2850 7000 2850
+Wire Wire Line
+	5650 3550 6300 3550
+Wire Wire Line
+	6300 3550 6300 3350
+Wire Wire Line
+	6300 3550 6300 4650
+Wire Wire Line
+	6300 4650 5550 4650
+Connection ~ 6300 3550
+$Comp
+L Device:R R1
+U 1 1 6196DCF4
+P 5400 4650
+F 0 "R1" V 5193 4650 50  0000 C CNN
+F 1 "47k" V 5284 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5330 4650 50  0001 C CNN
+F 3 "~" H 5400 4650 50  0001 C CNN
+	1    5400 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4650 4760 4650
+$Comp
+L Device:D_Zener D1
+U 1 1 6196E4C8
+P 4550 4650
+F 0 "D1" H 4550 4433 50  0000 C CNN
+F 1 "D_Zener" H 4550 4524 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 4550 4650 50  0001 C CNN
+F 3 "~" H 4550 4650 50  0001 C CNN
+	1    4550 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 4650 4760 4650
+Connection ~ 4760 4650
+Wire Wire Line
+	4400 4650 4100 4650
+Wire Wire Line
+	4100 4650 4100 4300
+Wire Wire Line
+	4100 4300 5050 4300
+Wire Wire Line
+	5050 4300 5050 4150
+Wire Wire Line
+	5050 4300 5150 4300
+Connection ~ 5050 4300
+$Comp
+L Device:R R2
+U 1 1 6196FBC6
+P 6050 4350
+F 0 "R2" V 5843 4350 50  0000 C CNN
+F 1 "47k" V 5934 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5980 4350 50  0001 C CNN
+F 3 "~" H 6050 4350 50  0001 C CNN
+	1    6050 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3650 6700 3650
+Wire Wire Line
+	6700 4350 6200 4350
+$Comp
+L Device:D_Zener D2
+U 1 1 61970781
+P 5550 4350
+F 0 "D2" H 5550 4133 50  0000 C CNN
+F 1 "D_Zener" H 5550 4224 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 5550 4350 50  0001 C CNN
+F 3 "~" H 5550 4350 50  0001 C CNN
+	1    5550 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 4350 5050 4350
+Wire Wire Line
+	5050 4350 5050 4300
+Wire Wire Line
+	4950 4550 5700 4550
+Wire Wire Line
+	5700 4550 5700 4350
+Connection ~ 5700 4350
+Wire Wire Line
+	6700 3650 6700 4350
+Wire Wire Line
+	5700 4350 5900 4350
+$Comp
+L power:GND #PWR0101
+U 1 1 6198C1E6
+P 5750 7180
+F 0 "#PWR0101" H 5750 6930 50  0001 C CNN
+F 1 "GND" H 5755 7007 50  0000 C CNN
+F 2 "" H 5750 7180 50  0001 C CNN
+F 3 "" H 5750 7180 50  0001 C CNN
+	1    5750 7180
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5450 5150 5450
+$Comp
+L power:+5V #PWR0102
+U 1 1 6198F0FB
+P 2850 4700
+F 0 "#PWR0102" H 2850 4550 50  0001 C CNN
+F 1 "+5V" H 2865 4873 50  0000 C CNN
+F 2 "" H 2850 4700 50  0001 C CNN
+F 3 "" H 2850 4700 50  0001 C CNN
+	1    2850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4700 2850 4950
+Connection ~ 4080 4950
+Wire Wire Line
+	4950 4900 4400 4900
+Wire Wire Line
+	4950 4900 4950 4550
+Wire Wire Line
+	5150 4300 5150 5450
+Wire Wire Line
+	2850 4950 4080 4950
+$Comp
+L Connector:USB_A J1
+U 1 1 619A616B
+P 4280 7010
+F 0 "J1" V 4383 7339 50  0000 L CNN
+F 1 "USB_A" V 4292 7339 50  0000 L CNN
+F 2 "Connector_USB:USB3_A_Molex_48393-001" H 4430 6960 50  0001 C CNN
+F 3 " ~" H 4430 6960 50  0001 C CNN
+	1    4280 7010
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4680 7010 5750 7020
+Connection ~ 5750 7020
+Wire Wire Line
+	4400 6580 4280 6580
+Wire Wire Line
+	4280 6580 4280 6710
+Wire Wire Line
+	4770 6650 4380 6650
+Wire Wire Line
+	4380 6650 4380 6710
+Wire Wire Line
+	5750 5450 5750 7020
+Wire Wire Line
+	4400 4900 4400 6580
+Wire Wire Line
+	4760 4650 4770 6650
+Wire Wire Line
+	4080 4950 4080 6710
+Wire Wire Line
+	5750 7020 5750 7110
+Wire Wire Line
+	4680 7110 5750 7110
+Wire Wire Line
+	5750 7110 5750 7020
+Connection ~ 5750 7110
+Wire Wire Line
+	5750 7110 5750 7180
+$EndSCHEMATC
